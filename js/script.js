@@ -46,8 +46,6 @@ var quotes = [
   {
     quote: 'Drawing is the honesty of the art. There is no possibility of cheating. It is either good or bad.',
     source: 'Salvador Dalí',
-    citation: 'People',
-    year: 1976
   },
   {
     quote: 'Not the power to remember, but its very opposite, the power to forget, is a necessary condition for our existence.',
@@ -96,6 +94,10 @@ function newBackground() {
   document.body.style.backgroundColor = getRandomColor();
   document.getElementById('loadQuote').style.backgroundColor = getRandomColor();
 };
+
+//changes qoute and background color after 4 seconds
+setInterval(printQuote, 4000)
+setInterval(newBackground, 4000)
 
 //changes quote and color when button is clicked
 document.getElementById('loadQuote').addEventListener("click", newBackground, false);
