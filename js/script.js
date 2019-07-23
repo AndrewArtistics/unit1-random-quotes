@@ -4,7 +4,7 @@ project 1 - A Random Quote Generator
 Andy Tuinstra
 ******************************************/
 
-//the array of qoutes
+//the array of qoute objects
 var quotes = [
   {
       quote: 'The way to get started is to quit talking and begin doing.',
@@ -71,7 +71,7 @@ function getRandomColor() {
     return color;
 };
 
-//funtion to print the qoute
+//funtion to print the new qoute
 function printQuote() {
   let current = getRandomQuote();
   let html = '<p class="quote">' + current.quote + '</p>' + '<p class="source">' + current.source
